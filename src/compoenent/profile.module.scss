@@ -259,7 +259,7 @@ monospace;
 .PersonalInfo {
     // @include animate2();
     padding: 100px 150px;
-    height: 800px;
+    height: auto;
 }
 
 section.PersonalInfo h2::before {
@@ -278,7 +278,7 @@ section.workHistory h2::before {
     position: relative;
     bottom: -3px;
     counter-increment: section 1;
-    content: '01.';
+    content: '02.';
     margin-right: 10px;
     color: var(--green);
     font-family: var(--font-mono);

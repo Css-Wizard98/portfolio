@@ -4,6 +4,7 @@ import { Fragment } from "react";
 import icon from "../utils/letter-svgrepo-com.svg";
 import heart from "../utils/heart-icon.svg";
 import neofi from "../utils/neofi.png";
+import portfoli from "../utils/portfolio.png"
 
 const Profile = (props) => {
     const options = {
@@ -44,7 +45,7 @@ const Profile = (props) => {
         window.scrollTo(0, 0);
         if (window.location.hash) {
             window.history.replaceState(null, null, window.location.href.split('#')[0]);
-          }
+        }
         const sections = document.querySelectorAll('section')
         console.log(sections);
         sections.forEach(section => {
@@ -67,7 +68,7 @@ const Profile = (props) => {
                     <li style={{ animationDelay: '.55s' }}>04.<a href="#contact" style={{ textDecoration: 'none' }} className={classes.navBtn}>Contact</a></li>
                 </ul>
             </nav>
-            <div onClick={sidebarhandler} className={`${classes.sideBar} ${clickCount == 0 ? classes.NoAnimate : ""} ${sidebarVisible ? classes.Animate : clickCount>0? classes.reverseAnimate: ''}`}>
+            <div onClick={sidebarhandler} className={`${classes.sideBar} ${clickCount == 0 ? classes.NoAnimate : ""} ${sidebarVisible ? classes.Animate : clickCount > 0 ? classes.reverseAnimate : ''}`}>
                 <div className={`${classes.lines} ${classes.top}`}></div>
                 <div className={`${classes.lines} ${classes.middle}`}></div>
                 <div className={`${classes.lines} ${classes.bottom}`}></div>
@@ -130,7 +131,7 @@ const Profile = (props) => {
                 <div className={classes.fadeup} style={{ animationDelay: '1s' }}><h1 className={classes.title}>Hi, my name is</h1></div>
                 <div className={classes.fadeup} style={{ animationDelay: '1.1s' }}><h1 className={classes.heading1}>Ashish Jha.</h1></div>
                 <div className={classes.fadeup} style={{ animationDelay: '1.2s' }}><h1 style={{ color: '#8892b0' }} className={classes.heading1}>I build things for the web.</h1></div>
-                <div className={classes.fadeup} style={{ animationDelay: '1.3s' }}><p className={classes.about}>I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.</p></div>
+                <div className={classes.fadeup} style={{ animationDelay: '1.3s' }}><p className={classes.about}>I'm a front-end developer passionate about creating beautiful and functional websites. Explore my portfolio to see some of my latest work and feel free to get in touch.</p></div>
                 <div className={classes.fadeup} style={{ animationDelay: '1.4s' }}><a href="https://drive.google.com/file/d/1xqKKHWmomPxLErwQGzQAdP8F3bsYsqEG/view?usp=sharing" target="_blank">Resume</a></div>
             </div>
         </section>
@@ -140,7 +141,12 @@ const Profile = (props) => {
                 <div className={classes.inner}>
                     <div className={classes.styleText}>
                         <div>
-                            <p>Hello! My name is Ashish and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</p>
+                            <p>Hello, I'm Ashish, a front-end developer with a passion for creating exceptional web experiences. I have 2+(including 1 year of internship) of experience in the industry and specialize in crafting user-friendly websites that seamlessly merge form and function.</p>
+                            <br />
+                            <p>My web development journey started with an internship <span style={{ color: '#64ffda' }}>@Jungleworks</span>, a startup where I discovered my passion for front-end development. I was exposed to the latest front-end technologies and worked on a range of products, from small landing pages to large-scale web applications. Since then, I've honed my skills in modern front-end technologies such as HTML, CSS, JavaScript, and React.</p>
+                            <br />
+                            <p>When I'm not coding, , you can find me in the gym or exploring new hiking trails.</p>
+                            <br />
                             <p>Here are a few technologies I’ve been working with recently:</p>
                             <ul>
                                 <li>React</li>
@@ -177,9 +183,14 @@ const Profile = (props) => {
                             <p>April 2021 - April 2022</p>
                             <div>
                                 <ul>
-                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, dolores.</li>
-                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, explicabo. Fugit enim architecto dolores.</li>
-                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                    <li>Collaborated with UI designers to develop responsive and cross-browser
+                                        compatible designs utilizing Angular and React. </li>
+                                    <li>Created the mobile user interface for the product from scratch, using best
+                                        practices for mobile-first design, accessibility, and performance
+                                        optimization. </li>
+                                    <li>Streamlined commission calculation process by collaborating with the
+                                        back-end team at Bulbul (SAAS), reducing costs by 20% and eliminating the
+                                        need for external tools. </li>
                                 </ul>
                             </div>
                         </div>
@@ -191,9 +202,10 @@ const Profile = (props) => {
                             <p>April 2022 - Present</p>
                             <div>
                                 <ul>
-                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, dolores.</li>
-                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, explicabo. Fugit enim architecto dolores.</li>
-                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                    <li>Redesign the user interface for the onboarding process,Resulted in a 60% increase in onboarding steps completion.</li>
+                                    <li>Revamped the sign up and sign in process for Yelo(SAAS) with a primary focus on mobile-first design.</li>
+                                    <li>Modernized legacy code by updating and modularizing it to improve code
+                                        maintainability, scalability, and efficiency</li>
                                 </ul>
                             </div>
                         </div>
@@ -215,7 +227,7 @@ const Profile = (props) => {
                 <div className={classes.projectDetail}>
                     <p>Featured Project</p>
                     <h3>Neofi landing Page</h3>
-                    <div className={classes.details}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, reprehenderit soluta cumque doloribus impedit fugiat cum dolore sapiente quasi iure?</div>
+                    <div className={classes.details}>Landing page for a cryptocurrency trading website. The page utilizes the Binance API to fetch and display real-time prices for over 20 different cryptocurrencies.</div>
                     <ul>
                         <li>React</li>
                         <li>Biance Api</li>
@@ -231,7 +243,7 @@ const Profile = (props) => {
                 <div className={classes.projectDetail}>
                     <p>Featured Project</p>
                     <h3>Neofi landing Page</h3>
-                    <div className={classes.details}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, reprehenderit soluta cumque doloribus impedit fugiat cum dolore sapiente quasi iure?</div>
+                    <div className={classes.details}>Landing page for a cryptocurrency trading website. The page utilizes the Binance API to fetch and display real-time prices for over 20 different cryptocurrencies.</div>
                     <ul>
                         <li>React</li>
                         <li>Biance Api</li>
@@ -249,8 +261,8 @@ const Profile = (props) => {
                 <div className={classes.inner}>
                     <div className={classes.styleText}>
                         <div>
-                            <p>Hello! My name is Ashsih and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</p>
-                            <p>Here are a few technologies I’ve been working with recently:</p>
+                            <p>Thanks for checking out my portfolio! I'm currently looking for new opportunities and would love to hear from you,feel free to hit me up.</p>
+                            <p>Looking forward to hearing from you!</p>
                             <a href="mailto:jhaash98@gmail.com" target="_blank" className={classes.getInTouch}>Say Hello</a>
                         </div>
                     </div>
@@ -263,13 +275,13 @@ const Profile = (props) => {
         </footer>
 
 
-        {<div className={`${sidebarVisible?classes.sidebarVisible:''} ${classes.Popup}`}>
+        {<div className={`${sidebarVisible ? classes.sidebarVisible : ''} ${classes.Popup}`}>
             <div className={classes.body}>
                 <ul>
-                    <li onClick={sidebarhandler}><a style={{textDecoration:'none',color:'inherit'}} href="#about">About</a></li>
-                    <li onClick={sidebarhandler}><a style={{textDecoration:'none',color:'inherit'}}href="#experience">Experience</a></li>
-                    <li onClick={sidebarhandler}><a style={{textDecoration:'none',color:'inherit'}}href="#work">Work</a></li>
-                    <li onClick={sidebarhandler}><a style={{textDecoration:'none',color:'inherit'}}href="#contact">Contact</a></li>
+                    <li onClick={sidebarhandler}><a style={{ textDecoration: 'none', color: 'inherit' }} href="#about">About</a></li>
+                    <li onClick={sidebarhandler}><a style={{ textDecoration: 'none', color: 'inherit' }} href="#experience">Experience</a></li>
+                    <li onClick={sidebarhandler}><a style={{ textDecoration: 'none', color: 'inherit' }} href="#work">Work</a></li>
+                    <li onClick={sidebarhandler}><a style={{ textDecoration: 'none', color: 'inherit' }} href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>}
