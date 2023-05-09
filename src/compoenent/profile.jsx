@@ -246,8 +246,8 @@ const Profile = (props) => {
                     <h3>Todo App</h3>
                     <div className={classes.details}>Todo app using react and react router with router guard and user authentication using Firebase.</div>
                     <ul>
-                        <li>React</li>
-                        <li>Biance Api</li>
+                        <li>React-Router</li>
+                        <li>Firebase</li>
                         <li>Axios</li>
                     </ul>
                     <div></div>
