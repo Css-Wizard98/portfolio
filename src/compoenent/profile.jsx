@@ -5,6 +5,7 @@ import icon from "../utils/letter-svgrepo-com.svg";
 import heart from "../utils/heart-icon.svg";
 import neofi from "../utils/neofi.png";
 import portfoli from "../utils/portfolio.png"
+import todo from "../utils/todo.png";
 
 const Profile = (props) => {
     const options = {
@@ -227,7 +228,7 @@ const Profile = (props) => {
                 <div className={classes.projectDetail}>
                     <p>Featured Project</p>
                     <h3>Neofi landing Page</h3>
-                    <div className={classes.details}>Landing page for a cryptocurrency trading website. The page utilizes the Binance API to fetch and display real-time prices for over 20 different cryptocurrencies.</div>
+                    <div className={classes.details}>Landing page for a cryptocurrency trading website. The page utilizes the Binance API to fetch and display real-time prices.</div>
                     <ul>
                         <li>React</li>
                         <li>Biance Api</li>
@@ -238,12 +239,12 @@ const Profile = (props) => {
             </div>
             <div className={`${classes.project} ${classes.projectLeft}`}>
                 <div className={classes.projectImage}>
-                    <img width="80%" src={neofi} alt="" />
+                    <img width="80%" src={todo} alt="" />
                 </div>
                 <div className={classes.projectDetail}>
                     <p>Featured Project</p>
-                    <h3>Neofi landing Page</h3>
-                    <div className={classes.details}>Landing page for a cryptocurrency trading website. The page utilizes the Binance API to fetch and display real-time prices for over 20 different cryptocurrencies.</div>
+                    <h3>Todo App</h3>
+                    <div className={classes.details}>Todo app using react and react router with router guard and user authentication using Firebase.</div>
                     <ul>
                         <li>React</li>
                         <li>Biance Api</li>
