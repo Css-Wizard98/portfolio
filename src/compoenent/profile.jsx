@@ -78,7 +78,7 @@ const Profile = (props) => {
 
         <div className={classes.fadeupSocial} style={{ animationDelay: '2s' }}>
             <div>
-                <a className={classes.social}><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 31.665 31.665">
+                <a href="https://codepen.io/jha03669/pens/public" target="_blank" className={classes.social}><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 31.665 31.665">
                     <title>Codepen</title>
                     <path fill="#8892b0"
                         d="M16.878,0.415c-0.854-0.565-1.968-0.552-2.809,0.034L1.485,9.214c-0.671,0.468-1.071,1.233-1.071,2.052v9.444
@@ -89,7 +89,7 @@ const Profile = (props) => {
   V20.83l4.463-2.991l4.805,3.159L17.354,27.215z M27.954,17.927l-3.168-2.082l3.168-2.125V17.927z"
                     />
                 </svg></a>
-                <a className={classes.social}><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 438.549 438.549">
+                <a href="https://github.com/Css-Wizard98?tab=repositories" target="_blank" className={classes.social}><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 438.549 438.549">
                     <title>GitHub</title>
                     <path fill="#8892b0"
                         d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
@@ -113,7 +113,7 @@ const Profile = (props) => {
           C438.536,184.851,428.728,148.168,409.132,114.573z"
                     />
                 </svg></a>
-                <a className={classes.social}><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 430.117 430.117">
+                <a href="https://www.linkedin.com/in/ashish-jha-87595b166/" target="_blank" className={classes.social}><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 430.117 430.117">
                     <title>LinkedIn</title>
                     <path fill="#8892b0"
                         d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
