@@ -253,6 +253,11 @@ const Profile = (props) => {
                     <div></div>
                 </div>
             </div>
+
+<div className={classes.moreBtn} style={{textAlign:'center'}}>
+<a href="https://master--calm-beijinho-678928.netlify.app/" target="_blank" className={classes.getInTouch}>More</a>
+
+</div>
         </section>
 
         <section id="contact" style={{ animationDelay: '1=2s' }} className={`${classes.PersonalInfo} ${classes.contact}`}>

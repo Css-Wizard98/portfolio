@@ -594,6 +594,11 @@ footer {
     // border: 1px solid red;
 }
 
+.Active .moreBtn {
+    animation: leftSlide 1s ease-in-out forwards;
+    // border: 1px solid red;
+}
+
 @keyframes leftSlide {
     0% {
         opacity: 0;
@@ -872,6 +877,32 @@ footer {
         box-shadow: 0 20px 30px -15px var(--navy-shadow);
         // background-color: var(--light-navy);
         padding: 22px;
+    }
+}
+
+.projects{
+    .moreBtn{
+        opacity: 0;
+    }
+    .getInTouch {
+        color: var(--green);
+        background-color: transparent;
+        border: 1px solid var(--green);
+        border-radius: var(--border-radius);
+        padding: 1.25rem 1.75rem;
+        font-size: var(--fz-sm);
+        font-family: var(--font-mono);
+        line-height: 1;
+        text-decoration: none;
+        transition: var(--transition);
+        margin-top: 50px;
+        display: inline-block;
+    }
+
+    .getInTouch:hover {
+        outline: none;
+        box-shadow: 4px 4px 0 0 var(--green);
+        transform: translate(-5px, -5px);
     }
 }
 
