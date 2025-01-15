@@ -172,7 +172,7 @@ const Profile = (props) => {
                         <div>
                             <ul>
                                 <li className={`${activeIndex == 0 ? classes.activeJob : ''}`} onClick={() => companyHandler(0)}>Jungleworks</li>
-                                <li className={`${activeIndex == 1 ? classes.activeJob : ''}`} onClick={() => companyHandler(1)}>Jungleworks</li>
+                                <li className={`${activeIndex == 1 ? classes.activeJob : ''}`} onClick={() => companyHandler(1)}>Dice Enterprise</li>
                             </ul>
                         </div>
                     </div>
@@ -182,7 +182,7 @@ const Profile = (props) => {
                                 <span>Intern </span>
                                 <span>@ Jungleworks</span>
                             </h3>
-                            <p>April 2021 - April 2022</p>
+                            <p>April 2021 - June 2023</p>
                             <div>
                                 <ul>
                                     <li>Collaborated with UI designers to develop responsive and cross-browser
@@ -193,21 +193,45 @@ const Profile = (props) => {
                                     <li>Streamlined commission calculation process by collaborating with the
                                         back-end team at Bulbul (SAAS), reducing costs by 20% and eliminating the
                                         need for external tools. </li>
+                                    <li>Redesign the user interface for the onboarding process,Resulted in a 60% increase in onboarding steps completion.</li>
+                                    <li>Revamped the sign up and sign in process for Yelo(SAAS) with a primary focus on mobile-first design.</li>
+                                    <li>Modernized legacy code by updating and modularizing it to improve code
+                                        maintainability, scalability, and efficiency</li>
                                 </ul>
                             </div>
                         </div>
                         <div className={`${activeIndex == 1 ? classes.activeJob : ''} ${classes.task}`}>
                             <h3>
-                                <span>Developer </span>
-                                <span>@ Jungleworks</span>
+                                <span>Senior Developer </span>
+                                <span>@ Dice Enterprise</span>
                             </h3>
-                            <p>April 2022 - Present</p>
+                            <p>July 2023 - Present</p>
                             <div>
                                 <ul>
-                                    <li>Redesign the user interface for the onboarding process,Resulted in a 60% increase in onboarding steps completion.</li>
-                                    <li>Revamped the sign up and sign in process for Yelo(SAAS) with a primary focus on mobile-first design.</li>
-                                    <li>Modernized legacy code by updating and modularizing it to improve code
-                                        maintainability, scalability, and efficiency</li>
+                                    <li>
+                                        Built and centralized an internal component library repository, consolidating 20+ reusable components,
+                                        leading to a 25% reduction in development time for new features.
+                                    </li>
+                                    <li>
+                                        Spearheaded a major UI overhaul, converting 30+ class-based components into functional components,
+                                        improving maintainability, and reducing code complexity by 15%.
+                                    </li>
+                                    <li>
+                                        Worked closely with the UX/UI team to enhance the overall user experience by implementing smooth
+                                        animations, transitions, and responsive design patterns across all devices.
+                                    </li>
+                                    <li>
+                                        Contributed to bug fixes across multiple web applications, reducing active backlog issues by 10% over three
+                                        quarters and enhancing system reliability.
+                                    </li>
+                                    <li>
+                                        Actively participated in code reviews, mentoring team members, and promoting best practices in coding and
+                                        design.
+                                    </li>
+                                    <li>
+                                        Collaborated with cross-functional teams to align technical implementations with business goals, ensuring
+                                        timely delivery of high-quality features.
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -255,10 +279,10 @@ const Profile = (props) => {
                 </div>
             </div>
 
-<div className={classes.moreBtn} style={{textAlign:'center'}}>
+{/* <div className={classes.moreBtn} style={{textAlign:'center'}}>
 <a href="https://master--calm-beijinho-678928.netlify.app/" target="_blank" className={classes.getInTouch}>More</a>
 
-</div>
+</div> */}
         </section>
 
         <section id="contact" style={{ animationDelay: '1=2s' }} className={`${classes.PersonalInfo} ${classes.contact}`}>
