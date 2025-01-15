@@ -133,7 +133,7 @@ const Profile = (props) => {
                 <div className={classes.fadeup} style={{ animationDelay: '1.1s' }}><h1 className={classes.heading1}>Ashish Jha.</h1></div>
                 <div className={classes.fadeup} style={{ animationDelay: '1.2s' }}><h1 style={{ color: '#8892b0' }} className={classes.heading1}>I build things for the web.</h1></div>
                 <div className={classes.fadeup} style={{ animationDelay: '1.3s' }}><p className={classes.about}>I'm a front-end developer passionate about creating beautiful and functional websites. Explore my portfolio to see some of my latest work and feel free to get in touch.</p></div>
-                <div className={classes.fadeup} style={{ animationDelay: '1.4s' }}><a href="https://drive.google.com/file/d/1xqKKHWmomPxLErwQGzQAdP8F3bsYsqEG/view?usp=sharing" target="_blank">Resume</a></div>
+                <div className={classes.fadeup} style={{ animationDelay: '1.4s' }}><a href="https://drive.google.com/file/d/1iW29F6if9oBqyRPPFxVRGcdOycdTM8-5/view?usp=sharing" target="_blank">Resume</a></div>
             </div>
         </section>
         <section id="about" className={classes.PersonalInfo}>
@@ -154,6 +154,7 @@ const Profile = (props) => {
                                 <li>Redux</li>
                                 <li>Angular</li>
                                 <li>Javascript</li>
+                                <li>Typescipt</li>
                             </ul>
                         </div>
                     </div>
